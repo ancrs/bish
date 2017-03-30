@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Bish
+Comment=Bish P2P Cryptocurrency
+Exec=bish-qt %u
+Terminal=false
+Type=Application
+Icon=dash128
+MimeType=x-scheme-handler/bish;
+Categories=Office;Finance;
+Name[en_US]=bish-qt.desktop
