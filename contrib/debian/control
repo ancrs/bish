@@ -25,10 +25,10 @@ Build-Depends: debhelper,
  python
 Standards-Version: 3.9.2
 Homepage: https://www.bish.org/
-Vcs-Git: git://github.com/dashpay/bish.git
-Vcs-Browser: https://github.com/dashpay/bish
+Vcs-Git: git://github.com/bishpay/bish.git
+Vcs-Browser: https://github.com/bishpay/bish
 
-Package: dashd
+Package: bishd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
@@ -38,7 +38,7 @@ Description: peer-to-peer network based digital currency - daemon
  and issuing money are carried out collectively by the network. Bish Core
  is the name of the open source software which enables the use of this currency.
  .
- This package provides the daemon, dashd, and the CLI tool
+ This package provides the daemon, bishd, and the CLI tool
  bish-cli to interact with the daemon.
 
 Package: bish-qt

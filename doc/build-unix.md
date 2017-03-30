@@ -120,7 +120,7 @@ built by default.
 
 Notes
 -----
-The release is built with GCC and then "strip dashd" to strip the debug
+The release is built with GCC and then "strip bishd" to strip the debug
 symbols, which reduces the executable size by about 90%.
 
 
@@ -141,10 +141,10 @@ Berkeley DB
 It is recommended to use Berkeley DB 4.8. If you have to build it yourself:
 
 ```bash
-DASH_ROOT=$(pwd)
+BISH_ROOT=$(pwd)
 
 # Pick some path to install BDB to, here we create a directory within the bish directory
-BDB_PREFIX="${DASH_ROOT}/db4"
+BDB_PREFIX="${BISH_ROOT}/db4"
 mkdir -p $BDB_PREFIX
 
 # Fetch the source and verify that it is not tampered with
@@ -160,7 +160,7 @@ cd db-4.8.30.NC/build_unix/
 make install
 
 # Configure Bish Core to use our own-built instance of BDB
-cd $DASH_ROOT
+cd $BISH_ROOT
 ./autogen.sh
 ./configure LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/" # (other args...)
 ```
@@ -202,7 +202,7 @@ Hardening enables the following features:
 
     To test that you have built PIE executable, install scanelf, part of paxutils, and use:
 
-    	scanelf -e ./dashd
+    	scanelf -e ./bishd
 
     The output should contain:
 
@@ -217,7 +217,7 @@ Hardening enables the following features:
     executable without the non-executable stack protection.
 
     To verify that the stack is non-executable after compiling use:
-    `scanelf -e ./dashd`
+    `scanelf -e ./bishd`
 
     the output should contain:
 	STK/REL/PTL

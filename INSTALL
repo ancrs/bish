@@ -7,10 +7,10 @@ Use the autogen script to prepare the build environment.
     make
 
 Precompiled binaries are available at github, see
-https://github.com/dashpay/bish-binaries
+https://github.com/bishpay/bish-binaries
 
 Always verify the signatures and checksums.
 
-See doc/build-*.md for instructions on building dashd,
+See doc/build-*.md for instructions on building bishd,
 the intended-for-services, no-graphical-interface, reference
 implementation of Bish.

@@ -32,7 +32,7 @@ from threading import Thread
 import logging
 import copy
 
-import dash_hash
+import bish_hash
 
 BIP0031_VERSION = 60000
 MY_VERSION = 70103  # past bip-31 for ping/pong
@@ -64,8 +64,8 @@ def sha256(s):
 def hash256(s):
     return sha256(sha256(s))
 
-def dashhash(s):
-    return dash_hash.getPoWHash(s)
+def bishhash(s):
+    return bish_hash.getPoWHash(s)
 
 def deser_string(f):
     nit = struct.unpack("<B", f.read(1))[0]
@@ -247,7 +247,7 @@ def FromHex(obj, hex_string):
 def ToHex(obj):
     return hexlify(obj.serialize()).decode('ascii')
 
-# Objects that map to dashd objects, which can be serialized/deserialized
+# Objects that map to bishd objects, which can be serialized/deserialized
 
 class CAddress(object):
     def __init__(self):
@@ -496,8 +496,8 @@ class CBlockHeader(object):
             r += struct.pack("<I", self.nTime)
             r += struct.pack("<I", self.nBits)
             r += struct.pack("<I", self.nNonce)
-            self.sha256 = uint256_from_str(dashhash(r))
-            self.hash = encode(dashhash(r)[::-1], 'hex_codec').decode('ascii')
+            self.sha256 = uint256_from_str(bishhash(r))
+            self.hash = encode(bishhash(r)[::-1], 'hex_codec').decode('ascii')
 
     def rehash(self):
         self.sha256 = None
@@ -972,7 +972,7 @@ class msg_headers(object):
         self.headers = []
 
     def deserialize(self, f):
-        # comment in dashd indicates these should be deserialized as blocks
+        # comment in bishd indicates these should be deserialized as blocks
         blocks = deser_vector(f, CBlock)
         for x in blocks:
             self.headers.append(CBlockHeader(x))

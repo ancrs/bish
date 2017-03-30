@@ -188,7 +188,7 @@
         <translation>Portefeuille chiffré</translation>
     </message>
     <message>
-        <source>Bish will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dashs from being stolen by malware infecting your computer.</source>
+        <source>Bish will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bishs from being stolen by malware infecting your computer.</source>
         <translation>Bish va à présent se fermer pour terminer le chiffrement. N'oubliez pas que le chiffrement de votre portefeuille n'est pas une protection totale contre le vol par des logiciels malveillants qui infecteraient votre ordinateur.</translation>
     </message>
     <message>
@@ -3710,10 +3710,10 @@ https://www.transifex.com/projects/p/bish/</translation>
         <translation>Ce produit comprend des logiciels développés par le projet OpenSSL afin d'être utilisés dans la boîte à outils OpenSSL &lt;https://www.openssl.org/&gt;, un logiciel de chiffrement écrit par Eric Young et un logiciel UPnP développé par Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use dashd, or the -server option to bish-qt, you must set an rpcpassword in the configuration file:
+        <source>To use bishd, or the -server option to bish-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=dashrpc
+rpcuser=bishrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3721,10 +3721,10 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "Bish Alert" admin@foo.com
 </source>
-        <translation>Pour utiliser dashd, ou le paramètre -server de bish-qt, vous devez définir un rpc mot de passe dans le fichier de configuration:
+        <translation>Pour utiliser bishd, ou le paramètre -server de bish-qt, vous devez définir un rpc mot de passe dans le fichier de configuration:
 %s
 Il est recommandé que vous utilisiez ce mot de passe aléatoire:
-rpcuser=dashrpc
+rpcuser=bishrpc
 rpcpassword=%s
 (Vous ne devez pas vous souvenir de ce mot de passe)
 Le nom d'utilisateur et le mot de passe NE DOIVENT PAS être équivalent.

@@ -24,10 +24,10 @@ Drag Bish-Qt to your applications folder, and then run Bish-Qt.
 
 ### Need Help?
 
-* See the [Bish documentation](https://dashpay.atlassian.net/wiki/display/DOC)
+* See the [Bish documentation](https://bishpay.atlassian.net/wiki/display/DOC)
 for help and more information.
-* Ask for help on [#dashpay](http://webchat.freenode.net?channels=dashpay) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=dashpay).
-* Ask for help on the [DashTalk](https://dashtalk.org/) forums.
+* Ask for help on [#bishpay](http://webchat.freenode.net?channels=bishpay) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=bishpay).
+* Ask for help on the [BishTalk](https://bishtalk.org/) forums.
 
 Building
 ---------------------
@@ -57,8 +57,8 @@ The Bish Core repo's [root README](/README.md) contains relevant information on 
 - [Dnsseed Policy](dnsseed-policy.md)
 
 ### Resources
-* Discuss on the [DashTalk](https://dashtalk.org/) forums, in the Development & Technical Discussion board.
-* Discuss on [#dashpay](http://webchat.freenode.net/?channels=dashpay) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=dashpay).
+* Discuss on the [BishTalk](https://bishtalk.org/) forums, in the Development & Technical Discussion board.
+* Discuss on [#bishpay](http://webchat.freenode.net/?channels=bishpay) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=bishpay).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

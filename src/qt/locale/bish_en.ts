@@ -235,8 +235,8 @@
     </message>
     <message>
         <location line="-57"/>
-        <source>Bish will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dashs from being stolen by malware infecting your computer.</source>
-        <translation>Bish will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dashs from being stolen by malware infecting your computer.</translation>
+        <source>Bish will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bishs from being stolen by malware infecting your computer.</source>
+        <translation>Bish will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bishs from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -4244,7 +4244,7 @@ https://www.transifex.com/projects/p/bish/</translation>
 <context>
     <name>bish-core</name>
     <message>
-        <location filename="../dashstrings.cpp" line="+22"/>
+        <location filename="../bishstrings.cpp" line="+22"/>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Bind to given address and always listen on it. Use [host]:port notation for IPv6</translation>
     </message>
@@ -4730,10 +4730,10 @@ https://www.transifex.com/projects/p/bish/</translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>To use dashd, or the -server option to bish-qt, you must set an rpcpassword in the configuration file:
+        <source>To use bishd, or the -server option to bish-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=dashrpc
+rpcuser=bishrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -4741,10 +4741,10 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s &quot;Bish Alert&quot; admin@foo.com
 </source>
-        <translation>To use dashd, or the -server option to bish-qt, you must set an rpcpassword in the configuration file:
+        <translation>To use bishd, or the -server option to bish-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=dashrpc
+rpcuser=bishrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

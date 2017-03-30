@@ -85,7 +85,7 @@ bool AppInit(int argc, char* argv[])
         else
         {
             strUsage += "\n" + _("Usage:") + "\n" +
-                  "  dashd [options]                     " + _("Start Bish Core Daemon") + "\n";
+                  "  bishd [options]                     " + _("Start Bish Core Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -131,7 +131,7 @@ bool AppInit(int argc, char* argv[])
 
         if (fCommandLine)
         {
-            fprintf(stderr, "Error: There is no RPC client functionality in dashd anymore. Use the bish-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in bishd anymore. Use the bish-cli utility instead.\n");
             exit(EXIT_FAILURE);
         }
 #ifndef WIN32
@@ -189,7 +189,7 @@ int main(int argc, char* argv[])
 {
     SetupEnvironment();
 
-    // Connect dashd signal handlers
+    // Connect bishd signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? EXIT_SUCCESS : EXIT_FAILURE);

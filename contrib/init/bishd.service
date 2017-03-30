@@ -3,13 +3,13 @@ Description=Bish's distributed currency daemon
 After=network.target
 
 [Service]
-User=dashcore
-Group=dashcore
+User=bishcore
+Group=bishcore
 
 Type=forking
-PIDFile=/var/lib/dashd/dashd.pid
-ExecStart=/usr/bin/dashd -daemon -pid=/var/lib/dashd/dashd.pid \
--conf=/etc/dashcore/bish.conf -datadir=/var/lib/dashd -disablewallet
+PIDFile=/var/lib/bishd/bishd.pid
+ExecStart=/usr/bin/bishd -daemon -pid=/var/lib/bishd/bishd.pid \
+-conf=/etc/bishcore/bish.conf -datadir=/var/lib/bishd -disablewallet
 
 Restart=always
 PrivateTmp=true

@@ -1,6 +1,6 @@
 Mac OS X Build Instructions and Notes
 ====================================
-This guide will show you how to build dashd (headless client) for OSX.
+This guide will show you how to build bishd (headless client) for OSX.
 
 Notes
 -----
@@ -41,7 +41,7 @@ NOTE: Building with Qt4 is still supported, however, could result in a broken UI
 
 1. Clone the GitHub tree to get the source code and go into the directory.
 
-        git clone https://github.com/dashpay/bish.git
+        git clone https://github.com/bishpay/bish.git
         cd bish
 
 2.  Build Bish Core:
@@ -56,7 +56,7 @@ NOTE: Building with Qt4 is still supported, however, could result in a broken UI
 
         make check
 
-4.  (Optional) You can also install dashd to your path:
+4.  (Optional) You can also install bishd to your path:
 
         make install
 
@@ -78,11 +78,11 @@ Download Qt Creator from https://www.qt.io/download/. Download the "community ed
 
 Creating a release build
 ------------------------
-You can ignore this section if you are building `dashd` for your own use.
+You can ignore this section if you are building `bishd` for your own use.
 
-dashd/bish-cli binaries are not included in the Bish-Qt.app bundle.
+bishd/bish-cli binaries are not included in the Bish-Qt.app bundle.
 
-If you are building `dashd` or `Bish Core` for others, your build machine should be set up
+If you are building `bishd` or `Bish Core` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -97,24 +97,24 @@ bundle is packaged and signed to create the .dmg disk image that is distributed.
 Running
 -------
 
-It's now available at `./dashd`, provided that you are still in the `src`
+It's now available at `./bishd`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./dashd` to get the filename where it should be put, or just try these
+Run `./bishd` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=dashrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/DashCore/bish.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/DashCore/bish.conf"
+    echo -e "rpcuser=bishrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/BishCore/bish.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/BishCore/bish.conf"
 
 The next time you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours;
 you can monitor its process by looking at the debug.log file, like this:
 
-    tail -f $HOME/Library/Application\ Support/DashCore/debug.log
+    tail -f $HOME/Library/Application\ Support/BishCore/debug.log
 
 Other commands:
 -------
 
-    ./dashd -daemon # to start the bish daemon.
+    ./bishd -daemon # to start the bish daemon.
     ./bish-cli --help  # for a list of command-line options.
     ./bish-cli help    # When the daemon is running, to get a list of RPC commands

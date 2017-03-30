@@ -46,7 +46,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.bish.DashPayment</string>
+      <string>org.bish.BishPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>bish</string>
@@ -71,7 +71,7 @@
         <string>application/x-bish-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>dashpaymentrequest</string>
+          <string>bishpaymentrequest</string>
         </array>
       </dict>
     </dict>

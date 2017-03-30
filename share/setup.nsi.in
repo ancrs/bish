@@ -48,11 +48,11 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile @abs_top_srcdir@/dashcore-${VERSION}-win@WINDOWS_BITS@-setup.exe
+OutFile @abs_top_srcdir@/bishcore-${VERSION}-win@WINDOWS_BITS@-setup.exe
 !if "@WINDOWS_BITS@" == "64"
-InstallDir $PROGRAMFILES64\DashCore
+InstallDir $PROGRAMFILES64\BishCore
 !else
-InstallDir $PROGRAMFILES\DashCore
+InstallDir $PROGRAMFILES\BishCore
 !endif
 CRCCheck on
 XPStyle on
@@ -77,7 +77,7 @@ Section -Main SEC0000
     File /oname=COPYING.txt @abs_top_srcdir@/COPYING
     File /oname=readme.txt @abs_top_srcdir@/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File @abs_top_srcdir@/release/dashd.exe
+    File @abs_top_srcdir@/release/bishd.exe
     File @abs_top_srcdir@/release/bish-cli.exe
     SetOutPath $INSTDIR\doc
     File /r @abs_top_srcdir@/doc\*.*
@@ -106,10 +106,10 @@ Section -post SEC0001
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" UninstallString $INSTDIR\uninstall.exe
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
-    WriteRegStr HKCR "dashcore" "URL Protocol" ""
-    WriteRegStr HKCR "dashcore" "" "URL:Bish"
-    WriteRegStr HKCR "dashcore\DefaultIcon" "" $INSTDIR\bish-qt.exe
-    WriteRegStr HKCR "dashcore\shell\open\command" "" '"$INSTDIR\bish-qt.exe" "%1"'
+    WriteRegStr HKCR "bishcore" "URL Protocol" ""
+    WriteRegStr HKCR "bishcore" "" "URL:Bish"
+    WriteRegStr HKCR "bishcore\DefaultIcon" "" $INSTDIR\bish-qt.exe
+    WriteRegStr HKCR "bishcore\shell\open\command" "" '"$INSTDIR\bish-qt.exe" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -147,7 +147,7 @@ Section -un.post UNSEC0001
     DeleteRegValue HKCU "${REGKEY}" Path
     DeleteRegKey /IfEmpty HKCU "${REGKEY}\Components"
     DeleteRegKey /IfEmpty HKCU "${REGKEY}"
-    DeleteRegKey HKCR "dashcore"
+    DeleteRegKey HKCR "bishcore"
     RmDir /REBOOTOK $SMPROGRAMS\$StartMenuGroup
     RmDir /REBOOTOK $INSTDIR
     Push $R0

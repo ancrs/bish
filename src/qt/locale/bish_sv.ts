@@ -176,7 +176,7 @@
         <translation>Plånbok krypterad</translation>
     </message>
     <message>
-        <source>Bish will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dashs from being stolen by malware infecting your computer.</source>
+        <source>Bish will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bishs from being stolen by malware infecting your computer.</source>
         <translation>Bish kommer nu att färdigställa krypteringsprocessen. Kom ihåg att krypteringen av din plånbok inte kan skydda dig helt och hållet från att dina Bish stjäls av skadeprogram som har infekterat din dator.</translation>
     </message>
     <message>
@@ -1436,7 +1436,7 @@ https://www.transifex.com/projects/p/bish/</translation>
     </message>
     <message>
         <source>Open the Bish debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Öppna Dashs avsökningsloggfil från den nuvarande datakatalogen. Detta kan ta ett par sekunder för stora loggfiler.</translation>
+        <translation>Öppna Bishs avsökningsloggfil från den nuvarande datakatalogen. Detta kan ta ett par sekunder för stora loggfiler.</translation>
     </message>
     <message>
         <source>&amp;Open</source>
@@ -1508,7 +1508,7 @@ https://www.transifex.com/projects/p/bish/</translation>
     </message>
     <message>
         <source>Welcome to the Bish RPC console.</source>
-        <translation>Välkommen till Dashs RPC-konsol.</translation>
+        <translation>Välkommen till Bishs RPC-konsol.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>

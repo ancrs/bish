@@ -9,7 +9,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between bish-cli and dashd)
+ * CBaseChainParams defines the base parameters (shared between bish-cli and bishd)
  * of a given instance of the Bish system.
  */
 class CBaseChainParams

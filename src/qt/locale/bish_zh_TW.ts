@@ -188,7 +188,7 @@
         <translation>錢包已加密</translation>
     </message>
     <message>
-        <source>Bish will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dashs from being stolen by malware infecting your computer.</source>
+        <source>Bish will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bishs from being stolen by malware infecting your computer.</source>
         <translation>達世幣軟體現在要關閉，好完成加密程序。請注意，加密錢包不能完全防止入侵你的電腦的惡意程式偷取達世幣。</translation>
     </message>
     <message>

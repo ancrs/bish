@@ -1,11 +1,11 @@
 Sample configuration files for:
 
-SystemD: dashd.service
-Upstart: dashd.conf
-OpenRC:  dashd.openrc
-         dashd.openrcconf
-CentOS:  dashd.init
-OS X:    org.bish.dashd.plist
+SystemD: bishd.service
+Upstart: bishd.conf
+OpenRC:  bishd.openrc
+         bishd.openrcconf
+CentOS:  bishd.init
+OS X:    org.bish.bishd.plist
 
 have been made available to assist packagers in creating node packages here.
 

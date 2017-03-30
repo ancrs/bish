@@ -58,8 +58,8 @@ public:
     enum Unit
     {
         BISH,
-        mDASH,
-        uDASH,
+        mBISH,
+        uBISH,
         duffs
     };
 
